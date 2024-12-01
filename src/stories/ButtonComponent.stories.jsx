@@ -90,3 +90,25 @@ InteractiveButton.args = {
   ...Default.args,
   children: 'Interactive Button'
 };
+
+export const CenteredLoginButton = () => (
+    <div 
+      style={{ 
+        display: 'flex', 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        height: '100vh', 
+        backgroundColor: '#f4f4f4' 
+      }}
+    >
+      <ButtonComponent 
+        {...Default.args} 
+        children="Login" 
+        style={{
+          padding: '10px 20px',
+          fontSize: '16px',
+          fontWeight: 'bold'
+        }} 
+      />
+    </div>
+  );
